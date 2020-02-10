@@ -1,0 +1,315 @@
+* { box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+body { /*background-image: url(images/whiteback.jpg);*/
+   font-family: 'Permanent Marker', cursive;
+}
+
+
+h1 {padding-top: 45px;
+    padding-left: 220px;
+	padding: 5%;
+	font-size: 3em; 
+	text-align: center;
+	color: #FFFFFF;
+	border: 5px #BAEA38 solid;
+	display: block;
+	background-image:url(images/connorss.jpg);
+	background-size:cover;
+}
+
+nav {
+	text-align: center; 
+     font-weight: bold; 
+	 font-size: 1.5em;
+	 padding-top: 10px;
+	 float: left;
+	 width: 200px;
+	 height: 100%;
+	 position: fixed;
+}
+ 
+main h2, main h3, main h4, main p, main div, main ul, main dl { padding-left: 3em; padding-right: 2em; }
+nav a { text-decoration: none; }
+nav a:link { color: #03C; }
+nav a:visited{ color: #F8CF4F; }
+nav a:hover { color: #FFFFFF; }
+nav ul { list-style-type: none;
+       padding: 0;
+}
+#IndexP {font-weight:bold;
+		font-style: italic;
+		
+}
+#indexshirt { display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ConnorSun { background-image: url(images/G0232565.jpg);
+           background-size: 100% 100%;
+		   height: 250px; }
+#GearSun {background-image: url(images/GearImage.jpg);
+		background-size: 100% 100%;
+		height: 250px; 
+		
+}
+#AlertSun {background-image:url(images/HampSS.JPG);
+		background-size:cover;
+		height: 250px; 		
+}
+
+#infopic {background-image:url(images/BahaPic.PNG);
+			background-size:cover;
+			height:250px;
+}
+
+img { padding-left: 10px;
+     padding-right: 10px;
+	 
+}
+main { padding: 10%;
+      margin-left: 200px;
+	  background-color: #FEFAC8;
+}
+
+
+
+#wrapper {background-color: #EA8F35;
+		width: 80%;
+           margin-right: auto;
+		   margin-left: auto;
+           min-width: 900px;
+		   max-width: 1280px;
+		   box-shadow: 2px 2px 2px 2px #666666; 
+}
+
+form { padding: 2em; }
+
+footer { background-color: #6BDEF9;
+       font-size: small;
+	   font-style: italic;
+	   text-align: center;
+	   padding-bottom: 10px;
+	   border-top: 2px #221811 solid;
+}
+
+#connorpic {height:191px;
+			width:191px;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+			padding-left: 5%;
+}
+#bennettpic {display:block;
+			margin-left:auto;
+			margin-right:auto;
+			padding-left: 5%;
+	}
+#nickpic {display:block;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left: 5%;
+}
+#mtpic {display:block;
+		height:250px;
+		width:250px;
+		float:left;
+}
+
+#redsweat {display:block;
+			height:250px;
+			width:250px;
+			margin-left:auto;
+			margin-right:auto;
+}
+
+#greenshirt {display:block;
+			height:250px;
+			width:250px;
+			margin-left:auto;
+			margin-right:auto;
+}
+
+
+#salmon {display:block;
+		height:250px;
+		width:250px;
+}
+#Sshirt {margin-left:66%;
+
+}
+
+#favstuff {background-color: #FFF;
+}
+
+#favtext {text-align:center;
+		font-style:italic;
+
+}
+
+#shirtspg {background-color: #FFF;
+
+}
+
+#shirtslink {text-align:center;
+		color:#000;
+		
+}
+
+#hoodieslink {text-align:center;
+				color:#000;
+				
+}
+
+.shirttext {text-align:center;
+
+}
+
+#shihead {text-align:center;
+		font-style:italic;
+}
+
+#hoodies {background-color: #FFF;
+}
+#team { text-align: center;
+		font-size: 3em;
+		color: #000080;
+}
+h2 { text-align: center;
+color: #000080;
+}
+#logo {height: 75%;
+		width: 75%;
+		margin-left:auto;
+		margin-right:auto;
+		padding-top: 10%;
+		padding-left: 30%;
+}
+@media only screen and (max-width: 1024px) {
+	body { background-image: none; }
+	#wrapper { width: 100%;
+				min-width: 0;
+				margin: 0;
+				padding: 0;
+				padding-bottom: none;
+				box-shadow: none; 
+				background-color: #FFFFFF;				
+				}
+/	header { border-bottom: 5px solid #FEF6C2; }
+	h1 { margin-top: 0;
+	    margin-bottom: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font-size: 1.5em;
+		text-align: center;		}
+	nav { float: top;
+	      width: auto;
+		  padding-top: 0;
+		  margin: 10px;
+		  font-size: 1.3em; 
+		  position:relative;
+		  overflow: auto; 
+		  text-align: center;}
+	nav li  { display: inline-block; }
+	nav a { padding: 1em; 
+	      width: 8em;
+		  font-weight: bold;
+		  border-style: none; 
+		  }
+	nav ul { padding: 0;
+	       margin: 0;
+			text-align: center;}
+			
+	#AlertSun, #GearSun, #ConnorSun, #indexshirt { margin: 0; padding: 0; }
+	main { padding: 0;
+	      margin: 0;
+		  font-size: 90%; }
+	h2{ text-align: center;
+		font-size: 1em;
+	}
+	#team, #hoodieslink, #shirtslink{ text-align: center;
+		font-size: 1.5em;
+		color: #000080;
+}
+	h3, p { text-align: center;
+		font-size: 1em;
+	}
+	.shirttext, #indexshirt, #greenshirt, #redsweat, #mtpic, #salmon,  #shirtspg, #clothes{
+		height: 75%;
+		width: 75%;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	input, textarea { display: block; margin-bottom: 1em; }
+	{
+    .fa-bars {
+        transform: scale(2.2, 1.3);
+        -webkit-transform: scale(2.2, 1.3); /* Safari and Chrome */
+        -moz-transform: scale(2.2, 1.3); /* Firefox */
+        -ms-transform: scale(2.2, 1.3); /* IE 9+ */
+        -o-transform: scale(2.2, 1.3); /* Opera */
+        color: white;
+        margin: 15px -30px 10px 20px;
+    }
+
+    .navbar-nav {
+        background-color: white;
+        margin: 5px 50px 30px 0px;
+    }
+    .navbar-nav a {
+        color: #6d3093;
+    }
+
+@media only screen and (max-width: 768px) {
+	header { background-image: none; 
+			height: 128px; 
+			padding-top: 20%;
+			font-size: 1.25em;
+}
+	h1 { font-size: 1em;
+	     text-align: center;
+		 padding-left: 0; }
+	nav { margin: 0; text-align: center;}
+	nav a { display: block;
+	       padding: 0.2em;
+		   width: auto;
+		   border-bottom: 1px solid #FEF6C2; }
+	nav li { display: block; }
+	main  { padding-top: 1px; }
+	h2 { padding: 0.5em 0 0 0.5em;
+	    margin-right: 0.5em; }
+	.details { padding-left: 0; padding-right: 0; }
+	#AlertSun, #GearSun, #ConnorSun, #indexshirt { background-image: none; height: auto; } 
+	.shirttext, #indexshirt, #greenshirt, #redsweat, #mtpic, #salmon,  #shirtspg, #clothes{
+		height: 75%;
+		width: 75%;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.floatleft { padding-left: 0.5em; padding-right: 0.5em; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
+.fa-bars {
+        transform: scale(2.0, 1.2);
+        -webkit-transform: scale(2.0, 1.2); /* Safari and Chrome */
+        -moz-transform: scale(2.0, 1.2); /* Firefox */
+        -ms-transform: scale(2.0, 1.2); /* IE 9+ */
+        -o-transform: scale(2.0, 1.2); /* Opera */
+        margin: 15px -30px 10px 20px;
+    }
+    .navbar-toggler {
+        color: white;
+        margin-right: 90px;
+    }
+    .navbar-nav {
+        background-color: white;
+        margin-top: 18px;
+    }
+
+    .navbar-nav a {
+        color: #6d3093;
+    
+}
+
