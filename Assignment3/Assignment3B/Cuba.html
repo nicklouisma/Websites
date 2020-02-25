@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cuba</title>
+<meta charaset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.tablink {
+  background-color: transparent;
+  color: white;
+  float: top;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3%;
+  font-size: 25px;
+  width: 25%;
+  position: relative;
+  display: block;
+}
+.tablink:hover {
+	background: #ffffff;
+	transition: 1.5s ease;
+	color: #000000;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 10% 5%;
+  height: 90%;
+}
+</style>
+<link rel="stylesheet" href="Cuba.css">
+<link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Lemonada:300|Luckiest+Guy|Ma+Shan+Zheng|Righteous|Russo+One|Teko&display=swap" rel="stylesheet">
+</head>
+<div class="header">
+<button class="hometab"><a href="home.html" style="letter-spacing: 2px; font-family: Teko;">Home</button></a>
+<header>Cuba
+</header>
+</div>
+<body>
+<div>
+<main>
+<h3 style="background-image: url(images/blur.png); padding: 1%; border: solid 2px #ffffff; border-radius: %20;">
+Cuba, officially the Republic of Cuba, is a country comprising the island of Cuba as well as Isla de la Juventud and several minor archipelagos. Cuba is located in the northern Caribbean where the Caribbean Sea, Gulf of Mexico and Atlantic Ocean meet.</h3>
+	<button class="tablink" onclick="display('Elote',this,'#002A8F')">Elote</button>
+	<button class="tablink" onclick="display('Flan',this,'#FFFFFF')">Flan</button>
+	<button class="tablink" onclick="display('Costillitas',this,'#CF142B')">Costillitas</button>
+	<button class="tablink" onclick="display('Havana',this,'#002A8f')">Havana</button>
+</main>
+</div>
+
+<div id="Elote" class="tabcontent wrapper">
+	<h3>Elote</h3><img src="images/Elote.jpg">
+<p>Elotes are originally Mexican, but many Cuban restaurants, such as Café Habana in New York, have made it their own.
+It doesn’t matter whether you choose the dish at a Cuban restaurant, Mexican restaurant, from a street vendor or make Elote at home, it’s fabulous.
+While it may seem like nothing more than just grilled sweet corn with toppings, I assure you, it’s far more than just that. Not all fabulous foods come from the kitchens of great chefs and not all great chefs are in the kitchen of famous restaurants.
+
+Some of the most delicious foods are part of rich ethnic culture and prepared for celebrations or family gatherings. Elote is one of those foods.</p></div>
+<div id="Flan" class="tabcontent wrapper">
+	<h3>Flan</h3><img src="images/Flan.jpg">
+<p>Few desserts are as synonymous with Latin culture as flan, the soft caramel custard that’s served everywhere from Mexico to the Caribbean. In Cuba, where restaurant owners struggle to obtain a consistent supply of fresh food, “flan is something they almost always have the ingredients for,” says author and photographer Megan Fawn Schlow. Her new book, Paladares: Recipes Inspired by the Private Restaurants of Cuba, written with Anya von Bremzen, details the lengths to which the owners of paladares will go to adapt traditional recipes.
+
+Though flan is made with fresh milk in Mexico and much of central America, in Cuba, it’s made with evaporated and condensed milk from cans. The canned dairy is more economical, but as Schlow notes, essential because in Cuba “fresh milk is usually reserved for kids under the age of seven.” As an added bonus, the evaporated and condensed milks yield a thicker, creamier custard.</p>
+</div>
+
+<div id="Costillitas" class="tabcontent wrapper">
+  <h3>Costillitas</h3><img src="images/Costillitas.jpg">
+  <p>Pork ribs (costillas) / baby back ribs (costillitas) which are marinated and served with a mix of sour orange juice, lime juice, oregano, garlic, and olive oil. They taste sweet and tangy at the same time and are simply delicious.</p>
+</div>
+
+<div id="Havana" class="tabcontent wrapper">
+<h3>Havana</h3><img src="images/Havana.jpg">
+<p>Here's a picture of one of Dominican Republic's most popular location:</p>
+
+</div>
+<footer><center><em>We're located in San Diego, California.
+<a href ="www.pace.edu">islanddestination.pace.edu</a>
+Nicholas Louisma
+IT641
+2/15/2020
+Assignment3A</footer>
+<script>
+function display(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dominican Republic</title>
+<meta charaset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.tablink {
+  background-color: transparent;
+  color: white;
+  float: top;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3%;
+  font-size: 25px;
+  width: 25%;
+  position: relative;
+  display: block;
+}
+.tablink:hover {
+	background: #ffffff;
+	transition: 1.5s ease;
+	color: #000000;
+}
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 10% 5%;
+  height: 90%;
+}
+</style>
+<link rel="stylesheet" href="DominicanRepublic.css">
+<link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Lemonada:300|Luckiest+Guy|Ma+Shan+Zheng|Righteous|Russo+One|Teko&display=swap" rel="stylesheet">
+</head>
+<div class="header">
+<button class="hometab"><a href="home.html" style="letter-spacing: 2px; font-family: Teko;">Home</button></a>
+<header>Dominican Republic
+</header>
+</div>
+<body>
+<div>
+<main>
+<h3 style="background-image: url(images/blur.png); padding: 1%; border: solid 2px #ffffff; border-radius: %20;">
+The Dominican Republic is a Caribbean nation that shares the island of Hispaniola with Haiti to the west. It's known for its beaches, resorts and golfing. Its terrain comprises rainforest, savannah and highlands, including Pico Duarte, the Caribbean’s tallest mountain. Capital city Santo Domingo has Spanish landmarks like the Gothic Catedral Primada de America dating back 5 centuries in its Zona Colonial district.</h3>
+	<button class="tablink" onclick="display('Pastelitos',this,'#002D62')">Pastelitos</button>
+	<button class="tablink" onclick="display('Fritos',this,'#FFFFFF')">Pescado Frito</button>
+	<button class="tablink" onclick="display('Mofongo',this,'#CE1126')">Monfongo</button>
+	<button class="tablink" onclick="display('Amber',this,'#EAC102')">Amber Cove</button>
+</main>
+</div>
+
+<div id="Pastelitos" class="tabcontent wrapper">
+	<h3>Pastelitos</h3><img src="images/Pastelitos.jpg">
+<p>The term pastelitos simply means "little pies".   There are many versions which vary with the country or region in which they are made.   The dough is sometimes quite simple; a variation of pie dough while other versions use a more complex puff pastry.
+
+In New Mexico the dough is typically a simple flour, salt, baking powder and shortening mixture.  The treats are made in large flat pans and cut into rectangles.  Common fillings include raisins, prunes, and dried apples.  The filling is cooked down to a thick paste then spread on a bottom layer of dough then topped with another layer of dough.
+
+
+This simple dessert is made for special occasions and is a fall harvest tradition.</p></div>
+<div id="Fritos" class="tabcontent wrapper">
+	<h3>Pescado Fritos</h3><img src="images/Pescado.jpg">
+<p>Considered a true Dominican delicacy, Pescado Frito (whole fried fish) is served in restaurants across the entire country – and is something all visitors should try… and no doubt fall in love with!
+
+An incredibly simple dish, Pescado Frito is fresh fish rubbed with salt and pepper, coated in flour and then deep fried until crispy and served with a side of tostones (or something healthier like rice or veggies if you prefer) and a wedge of lemon. The only real variation is the type and size of the fish, most popular are the Cojinua and Loro (Parrotfish), as well as the more expensive Chilo (Red Snapper).
+
+fried fishMost restaurants will bring out their “catch of the day” on a platter, so that you can make your preferred selection before they fry it up. A 1lb fish is a good serving size for 1 person (1.5lb if you’re very hungry), and if you prefer to share, 2lb is normally perfect for 2 people.
+
+While we have seen some eat their Pescado Frito with a knife and fork – most (including ourselves) prefer to use our fingers, it just seems to taste better that way! If you’re brave enough -dig into the fins (yes really)- if cooked well they will be as crispy as potato chips, but much more flavorful!</p>
+</div>
+
+<div id="Mofongo" class="tabcontent wrapper">
+  <h3>Mofongo</h3><img src="images/Mofongo.jpg">
+  <p>Mofongo is a traditional Puerto Rican dish made with fried green plantains that are then mashed with garlic and mixed pork cracklins. It is then shaped into a ball or formed in a cup or ramekin to be served. 
+  <br>
+
+Mofongo – delicious fried green plantains mashed with garlic, pork rinds, and served with a simple garlic mojo for a scrumptious Caribbean dish that will become your new favorite! 
+
+Traditional Mofongo served on a plate with extra chicharron and garlic mojo and avocado on the side. 
+Mofongo is a traditional Puerto Rican dish made with fried green plantains that are then mashed with garlic and mixed pork cracklins. It is then shaped into a ball or formed in a cup or ramekin to be served. 
+
+Dominicans are also known for making a fantastic mofongo recipe and it’s the flagship dish of many Dominican restaurants in New York City. Although, I do not see much difference between the Puerto Rican and Dominican Mofongo, neither in ingredients or cooking method. <br>
+I love mofongo. It’s one of those dishes that just hits you in the right spot. It is flavorful and super feeling. It’s always best to serve it alongside some type of broth or sauce to add a bit extra moisture and enhance the flavor. 
+
+There are those who would serve it with a beef or chicken stew sauce or a garlic mojo. Either way, it’s absolutely delicious. </p>
+</div>
+
+<div id="Amber" class="tabcontent wrapper">
+<h3>Amber Cove</h3><img src="images/Amber.jpg">
+<p>Here's a picture of one of Dominican Republic's most popular location:</p>
+
+</div>
+<footer><center><em>We're located in San Diego, California.
+<a href ="www.pace.edu">islanddestination.pace.edu</a>
+Nicholas Louisma
+IT641
+2/15/2020
+Assignment3A</footer>
+<script>
+function display(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

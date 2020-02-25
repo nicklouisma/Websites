@@ -1,0 +1,79 @@
+header { 
+	text-align: center;
+	float:center;
+	font-size: 50px;
+	font-family: 'Teko', cursive;
+	color:#ffffff;
+	}
+img {
+	max-width:100%;
+    height: auto;
+}
+main {
+	padding: 10%;
+	display: flex;
+	float: left;
+}
+.blur
+{
+	padding: 5%;
+}
+nav {
+	text-align: left; 
+	}
+ul {
+	list-style: none;
+	}
+a:link {
+	text-decoration: none;
+	color: #ffffff;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration : none;
+	}
+a:visited {
+	color:#ffffff;
+}
+li {
+	font-size: 40px;
+	opacity:0.5;
+	}
+li:hover {
+	border-radius:5%;
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+	transition: 1.5s ease;
+	opacity:1;
+}
+body { 
+	color: #fff7b1;
+	font-family:'Righteous', cursive;
+	align-items: left;
+	position: fixed;
+	width: 100%;
+    height: 100%;
+	background: url("images/Island Background.jpg") no-repeat center center fixed;	 
+	background-size: cover;
+	overflow: hidden;
+}
+#wrapper { 
+	width: 100%;
+    margin: left;
+	}
+footer { 
+	background-color: transparent;
+	color: #ffffff;
+    font-size: large;
+	font-family: 'Teko', sans-serif;
+	text-align: center;
+	padding: 1px;
+	position: absolute; 
+	bottom: 5px;
+	width: 100%; 
+}
+img {
+	max-width:100%;
+    height: auto;
+}
